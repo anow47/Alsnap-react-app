@@ -1,0 +1,130 @@
+.running{
+    background: #70ec0b;
+}
+.finished{
+    background: #fc4b4bb6;
+}
+.auctions .auctions_banner{
+    position: absolute;
+    width: 100%;
+    height: 430px;
+}
+.auctions_banner:before {
+    content: "";
+    background: url('../images/services/banner-bg.png') no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    max-width: 1233px;
+    width: 100%;
+}
+.auctions_banner::after{
+	content: "";
+	background: #191c21df;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+} 
+/* End of Auctions Banner  */
+.running-side-title {
+    padding-top: 14rem;
+    padding-bottom: 2rem;
+    display: grid;
+    justify-content: right;
+    position: relative;
+    z-index: 1;
+}
+.auctions h1{
+    padding: 0 0.5rem 0.2rem 2rem;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    width: fit-content;
+}
+.auctions_feature{
+    padding-left: var(--section-padding);
+    padding-right: var(--section-padding);
+    padding-bottom: 2rem;
+}
+.auctions_feature .feature_item .img_container {
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+.auctions_feature .feature_item .img_container img {
+    max-width: 100%;
+    height: 250px;
+    border-radius: 1rem;
+}
+.auctions_feature .feature_inner .feature_item {
+    margin-bottom: 0;
+}
+.auctions_feature .feature_item {
+    padding: 0 0 15px 0;
+}
+.auctions_feature .content-frame-link{
+    display: block;
+    text-align: center;
+}
+.title{
+    font-size: 1.3rem;
+    color: #fff;
+    padding-bottom: 0.5rem;
+}
+.date{
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.1rem 2rem 0.4rem 2rem;
+    border-radius: 10px;
+}
+.buttons-container{
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin-top: 1rem;
+}
+.buttons-container .btn-link {
+    min-width: 45%;
+    font-size: 1rem;
+}
+.buttom-section .auctions_feature{
+    position: relative;
+    top: 0px;
+}
+.buttom-section .side-title{
+    display: grid;
+    justify-content: right;
+    padding-right: 90px;
+    margin-bottom: 2rem;
+}
+@media (max-width: 900px){
+    .auctions_feature{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .side-title{
+		padding-left: 20px;
+		padding-right: 20px;
+    }
+}
+@media (max-width: 600px){
+    .auctions_feature{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .side-title{
+		padding-left: 10px;
+		padding-right: 10px;
+    }
+}
+@media (max-width: 480px){
+    .buttons-container{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .buttons-container .btn-link {
+        min-width: 100%;
+        font-size: 1rem;
+    }
+}

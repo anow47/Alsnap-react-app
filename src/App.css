@@ -1,0 +1,5 @@
+.App {
+    position: relative;
+    top: -70px;
+    background: var(--dark-bgc);
+}
